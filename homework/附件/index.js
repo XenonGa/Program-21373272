@@ -8,6 +8,12 @@ window.onload = function() {
         search();
     });
 
+    window.onkeydown = function(event) {
+        event = event || window.event;
+        if(event.keyCode == 13)
+        search();
+    };
+
     // TODO: 在此为 top-right 元素设置监听器
     document.getElementById('top-right').addEventListener('click', function() {
         clickLogin();
